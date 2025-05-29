@@ -18,7 +18,7 @@ body {
     padding:16px 0 0 16px;
 }
 
-.sidebar__navigation.logo {
+.sidebar__navigation .logo {
     background: #121212;
     display: flex;
     border-radius: 8px;
@@ -181,7 +181,7 @@ body {
   
   .button button {
       background-color: white; 
-      color: #6200ea; 
+      color: #000000; 
       border-radius: 25px; 
       padding:10px 20px; 
       border:none; 
