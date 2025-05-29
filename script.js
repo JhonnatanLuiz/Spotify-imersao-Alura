@@ -6,15 +6,6 @@ const greetingElement = document.getElementById("greeting");
 // Obtém a hora atual do sistema
 const currentHour = new Date().getHours();
 
-// Define a saudação com base na hora atual
-if (currentHour >= 5 && currentHour < 12) {
-   greetingElement.textContent = "Bom dia";
- } else if (currentHour >= 12 && currentHour < 18) {
-   greetingElement.textContent = "Boa tarde";
- } else {
-   greetingElement.textContent = "Boa noite";
- }
-
 // Forma mais simples
 const greetingMessage =
   currentHour >= 5 && currentHour < 12
@@ -35,8 +26,6 @@ const observer = new ResizeObserver(() => {  //mudanças no tamanho do elemento
   //largura mínima de 200px e máxima de 1fr (uma fração do espaço disponível).
   container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(200px, 1fr))`;
 
-  console.log({ container });
-  console.log({ numColumns });
 });
 //observando a mudança do elemento
 observer.observe(container);
